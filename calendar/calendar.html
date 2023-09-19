@@ -6,19 +6,19 @@
     <title>Pop-up Calendar Example</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <style>
-        /* Style for positioning the calendar */
+        
         .custom-datepicker {
             position: absolute;
-            top: 50px; /* Adjust the top position as needed */
-            left: 300px; /* Adjust the left position as needed */
-            z-index: 9999; /* Ensure the calendar appears above other elements */
+            top: 50px; 
+            left: 300px;
+            z-index: 9999; 
         }
     </style>
 </head>
 <body>
 <h1>Select a Month and Year</h1>
 
-<!-- Dropdowns for month and year selection -->
+
 <label for="month-select">Month:</label>
 <select id="month-select">
     <option value="1">January</option>
@@ -42,13 +42,13 @@
     <option value="2025">2025</option>
     <option value="2026">2026</option>
     <option value="2027">2027</option>
-    <!-- Add more options for other years -->
+
 </select>
 
-<!-- Go button to show the calendar -->
+
 <button id="show-calendar-button">Go</button>
 
-<!-- Calendar container initially hidden -->
+
 <div id="calendar-container" class="custom-datepicker" style="display: none;"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -59,7 +59,7 @@
         var calendarContainer = $('#calendar-container');
         var datepickerInitialized = false;
 
-        // Function to show the calendar when the "Go" button is clicked
+        
         $('#show-calendar-button').click(function() {
             var selectedMonth = $("#month-select").val();
             var selectedYear = $("#year-select").val();
@@ -70,7 +70,7 @@
                 }
 
                 calendarContainer.datepicker({
-                    dateFormat: "yy-mm-dd", // You can adjust the date format
+                    dateFormat: "yy-mm-dd", 
                     changeMonth: true,
                     changeYear: true,
                     showButtonPanel: true,
